@@ -1,15 +1,3 @@
-// Fonts
-@font-face {
-    font-family: 'MyFont';
-    src: url('../fonts/myfont.eot');
-    src: url('../fonts/myfont.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/myfont.woff') format('woff'),
-      url('../fonts/myfont.ttf') format('truetype'),
-      url('../fonts/myfont.svg#webfont') format('svg');
-}
-
-
-
 // Common
 *, *::before, *::after {
     box-sizing: inherit;
@@ -25,15 +13,120 @@ body {
     padding: 0;
     height: 100%;
     background-color: #fff;
-    font-family: sans-serif;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    /*word-break: break-all;*/
-    /*word-wrap: break-word;*/
 }
 .container {
-    max-width: 980px;
+    max-width: 1150px;
+    width: 90%;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+
+
+// header
+.header {
+    padding: 8px 0;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.15);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+
+        &__link {
+            display: block;
+        }
+
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    &-nav {
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+
+            & + & {
+                margin-left: 40px;
+            }
+        }
+
+        &__link {
+            font-size: 12px;
+            color: #505d68;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+// banner
+.banner {
+    padding: 5% 0;
+    background: url(../img/bg_1.jpg) no-repeat;
+    background-size: cover;
+    
+    &-info {
+        max-width: 60%;
+
+        .info {
+
+            &-heading {
+                margin-bottom: 50px;
+                display: inline-block;
+                font-size: 56px;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            &-date {
+                margin-bottom: 25px;
+                display: block;
+                font-size: 36px;
+                color: rgba(#fff, 0.8);
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+
+        .banner-adv {
+
+            &__item {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                .circle {
+                    margin-right: 20px;
+                    height: 24px;
+                    width: 24px;
+                    background-color: #1d4ca6;
+                    border: 5px solid #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.34);
+                }
+
+                .text {
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
 }
