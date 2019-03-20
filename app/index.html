@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 
 	<!-- STYLES -->
+	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
@@ -48,7 +49,7 @@
 					<li class="header-nav__item"><a href="#what" class="header-nav__link">Что вас ждет?</a></li>
 					<li class="header-nav__item"><a href="#organizers" class="header-nav__link">Организаторы</a></li>
 					<li class="header-nav__item"><a href="#spot" class="header-nav__link">Место</a></li>
-					<li class="header-nav__item"><a href="#review" class="header-nav__link">Отзывы</a></li>
+					<li class="header-nav__item"><a href="#feedback" class="header-nav__link">Отзывы</a></li>
 					<li class="header-nav__item"><a href="#contact" class="header-nav__link">Контакты</a></li>
 				</ul>
 			</nav>
@@ -56,7 +57,7 @@
 	</header>
 
 	<!-- banner -->
-	<section class="banner">
+	<section class="banner section">
 		<div class="container">
 			<div class="banner-info">
 				<div class="info-heading-wrap">
@@ -78,15 +79,225 @@
 					</li>
 				</ul>
 			</div>
-			<div class="banner-form"></div>
+			<div class="banner-form">
+				<form class="form">
+					<h6 class="form-cost">Цена</h6>
+					<h4 class="form-oldcost"><span class="number">20000</span> руб</h4>
+					<h4 class="form-newcost">14990 руб</h4>
+					<input type="text" placeholder="Имя">
+					<input type="number" placeholder="Номер телефона">
+					<input type="email" placeholder="Почта">
+					<input type="submit" value="Button">
+				</form>
+			</div>
 		</div>
 	</section>
 
 
 
+	<!-- what -->
+	<section class="what section">
+		<div class="container">
+			<h2 class="section-text">Что вас ждет?</h2>
+
+			<ul class="what-list">
+				<li class="what-item">
+					<div class="what-item__img">
+						<img src="./img/icons/suitcase.svg" alt="">
+					</div>
+					<h5 class="what-item__category">Бизнес</h5>
+					<ul class="what-features__list">
+						<li class="what-features__item">
+							<p class="text">Перепрошивка мышления</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Мастер классы</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Разборы кейсов</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Продажи</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Бизнес-игра</p>
+						</li>
+					</ul>
+				</li>
+				<li class="what-item">
+					<div class="what-item__img">
+						<img src="./img/icons/hands.svg" alt="">
+					</div>
+					<h5 class="what-item__category">Нетворкинг</h5>
+					<ul class="what-features__list">
+						<li class="what-features__item">
+							<p class="text">Team-building</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Мафия</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Командные работы</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Единомышленники</p>
+						</li>
+					</ul>
+				</li>
+				<li class="what-item">
+					<div class="what-item__img">
+						<img src="./img/icons/beach.svg" alt="">
+					</div>
+					<h5 class="what-item__category">Отдых</h5>
+					<ul class="what-features__list">
+						<li class="what-features__item">
+							<p class="text">Здоровое питание</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Мастер классы</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Спорт</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Утренний бег</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Баня</p>
+						</li>
+						<li class="what-features__item">
+							<p class="text">Прогулка</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
 
 
 
+	<!-- experts -->
+	<section class="experts section">
+		<div class="container">
+			<h2 class="section-text">Ведущие организаторы и эксперты</h2>
+
+			<div class="experts-slider js-sliderExperts">
+				<ul class="experts-list">
+					<li class="experts-item">
+						<div class="experts-item__img">
+							<img src="./img/logo.png" alt="">
+						</div>
+						<div class="experts-item__info">
+							<p class="info-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<h5 class="info-name">Alvin Simon</h5>
+							<h6 class="info-role">Senior UX designer</h6>
+							<ul class="info-social__list">
+								<li class="info-social__item">
+									<a href="#" class="info-social__link">
+										<img src="./img/social/inst.svg" alt="">
+									</a>
+								</li>
+								<li class="info-social__item">
+									<a href="#" class="info-social__link">
+										<img src="./img/social/vk.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- spot -->
+	<section class="spot section" id="spot">
+		<div class="container">
+			<h2 class="section-text">Где будет проходить?</h2>
+			<div class="spot-mark"></div>
+			<h3 class="spot-location">Московская область</h3>
+			<p class="spot-descr">Трансфер от вокзала до коттеджа и обратно включены в стоимость. <br /> Совместный выезд.</p>
+		</div>
+	</section>
+
+
+
+	<!-- feedback -->
+	<section class="fb section" id="feedback">
+		<div class="container">
+			<h2 class="section-text">Отзывы</h2>
+			<div class="fb-wrap">
+				<ul class="fb-list js-sliderFeedback">
+					<li class="fb-item">
+						<p class="fb-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliquat enim ad minim veniam.
+						</p>
+						<div class="fb-item__avatar">
+							<img src="./img/icons/mark.svg" alt="">
+						</div>
+						<h4 class="fb-item__name">Максим Андросенко</h4>
+						<h5 class="fb-item__role">Директор ООО</h5>
+					</li>
+					<li class="fb-item">
+						<p class="fb-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliquat enim ad minim veniam.
+						</p>
+						<div class="fb-item__avatar">
+							<img src="./img/icons/mark.svg" alt="">
+						</div>
+						<h4 class="fb-item__name">Максим Андросенко</h4>
+						<h5 class="fb-item__role">Директор ООО</h5>
+					</li>
+					<li class="fb-item">
+						<p class="fb-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliquat enim ad minim veniam.
+						</p>
+						<div class="fb-item__avatar">
+							<img src="./img/icons/mark.svg" alt="">
+						</div>
+						<h4 class="fb-item__name">Максим Андросенко</h4>
+						<h5 class="fb-item__role">Директор ООО</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- go -->
+	<section class="go section">
+		<div class="container">
+			<h2 class="section-text">Готовы к полной трансформации? <br> Тогда погнали!</h2>
+			<button class="go-link" type="button">Button</button>
+			<a href="vk.com/" class="go-vk"></a>
+		</div>
+	</section>
+
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<a href="#" class="footer-logo">
+				<img class="footer-logo__img" src="./img/logo@2x.png" alt="">
+			</a>
+			<p class="description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet.
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/slick.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>
