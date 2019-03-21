@@ -26,23 +26,40 @@ $(document).ready(function(){
 	});
 
 	// slick slider for review
-	// $('.js-sliderExperts').slick({
-	// 	slidesToShow: 3,
-	// });
+	$('.js-sliderExperts').slick({
+		dots: false,
+		prevArrow: '<div id="prev" class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>',
+		nextArrow: '<div id="next" class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>'
+	});
 
 	// slick slider for feedback
 	$('.js-sliderFeedback').slick({
+		dots: true,
 		slidesToShow: 3,
+		prevArrow: '<div id="prev" class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>',
+		nextArrow: '<div id="next" class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
+		responsive: [
+			{
+			  breakpoint: 750,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			  }
+			}
+		  ]
 	});
 
 	
-	// $( '.nav-toggle' ).click( function() {
-    //     if ( $( '#menu' ).is( ':hidden' ) ) {
-    //         $( '#menu' ).show('slideToggle');
-    //     }
-    //     else {
-	//         $( '#menu' ).hide('slideToggle');
-    //     }
-    // });
+	// mobile navbar
+	$( '.nav-toggle' ).click( function() {
+        if ( $( '#menu' ).is( ':hidden' ) ) {
+            $( '#menu' ).show('slideToggle');
+        }
+        else {
+	        $( '#menu' ).hide('slideToggle');
+        }
+    });
 
 });

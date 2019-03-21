@@ -18,6 +18,7 @@
 
 	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<!-- STYLES -->
 	<link rel="stylesheet" href="css/slick.min.css">
@@ -53,11 +54,13 @@
 					<li class="header-nav__item"><a href="#contact" class="header-nav__link">Контакты</a></li>
 				</ul>
 			</nav>
+
+			<div class="nav-toggle"><i class="fas fa-bars"></i></div>
 		</div>
 	</header>
 
 	<!-- banner -->
-	<section class="banner section">
+	<section class="banner section" id="main">
 		<div class="container">
 			<div class="banner-info">
 				<div class="info-heading-wrap">
@@ -96,7 +99,7 @@
 
 
 	<!-- what -->
-	<section class="what section">
+	<section class="what section" id="what">
 		<div class="container">
 			<h2 class="section-text">Что вас ждет?</h2>
 
@@ -177,24 +180,56 @@
 
 
 	<!-- experts -->
-	<section class="experts section">
+	<section class="experts section" id="organizers">
 		<div class="container">
 			<h2 class="section-text">Ведущие организаторы и эксперты</h2>
 
-			<div class="experts-slider js-sliderExperts">
-				<ul class="experts-list">
+			<div class="experts-slider">
+				<ul class="experts-list js-sliderExperts">
 					<li class="experts-item">
 						<div class="experts-item__img">
-							<img src="./img/logo.png" alt="">
+							<div class="img-wrap">
+								<img src="./img/slider/slide_1.jpg"">
+							</div>
 						</div>
 						<div class="experts-item__info">
 							<p class="info-text">
+								<i class="info-text-quote fa fa-quote-left" aria-hidden="true"></i>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							</p>
 							<h5 class="info-name">Alvin Simon</h5>
 							<h6 class="info-role">Senior UX designer</h6>
+							<ul class="info-social__list">
+								<li class="info-social__item">
+									<a href="#" class="info-social__link">
+										<img src="./img/social/inst.svg" alt="">
+									</a>
+								</li>
+								<li class="info-social__item">
+									<a href="#" class="info-social__link">
+										<img src="./img/social/vk.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="experts-item">
+						<div class="experts-item__img">
+							<div class="img-wrap">
+								<img src="./img/slider/slide_1.jpg"">
+							</div>
+						</div>
+						<div class="experts-item__info">
+							<p class="info-text">
+								<i class="info-text-quote fa fa-quote-left" aria-hidden="true"></i>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<h5 class="info-name">Simon Alvin</h5>
+							<h6 class="info-role">Senior Frontend</h6>
 							<ul class="info-social__list">
 								<li class="info-social__item">
 									<a href="#" class="info-social__link">
@@ -267,6 +302,28 @@
 						<h4 class="fb-item__name">Максим Андросенко</h4>
 						<h5 class="fb-item__role">Директор ООО</h5>
 					</li>
+					<li class="fb-item">
+						<p class="fb-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliquat enim ad minim veniam.
+						</p>
+						<div class="fb-item__avatar">
+							<img src="./img/icons/mark.svg" alt="">
+						</div>
+						<h4 class="fb-item__name">Максим Андросенко</h4>
+						<h5 class="fb-item__role">Директор ООО</h5>
+					</li>
+					<li class="fb-item">
+						<p class="fb-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliquat enim ad minim veniam.
+						</p>
+						<div class="fb-item__avatar">
+							<img src="./img/icons/mark.svg" alt="">
+						</div>
+						<h4 class="fb-item__name">Максим Андросенко</h4>
+						<h5 class="fb-item__role">Директор ООО</h5>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -275,7 +332,7 @@
 
 
 	<!-- go -->
-	<section class="go section">
+	<section class="go section" id="contact">
 		<div class="container">
 			<h2 class="section-text">Готовы к полной трансформации? <br> Тогда погнали!</h2>
 			<button class="go-link" type="button">Button</button>
