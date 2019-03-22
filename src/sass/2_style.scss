@@ -285,6 +285,10 @@ body {
             width: 360px;
             background-color: #fff;
             text-align: center;
+
+            @media (max-width: 500px) {
+                width: 300px;
+            }
             
             &-cost {
                 margin-bottom: 10px;
