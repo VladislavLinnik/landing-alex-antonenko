@@ -484,15 +484,13 @@ body {
         .btn-next,
         .btn-prev {
             position: absolute;
-            top: 50%;
+            bottom: 30px;
             color: #c2d1d9;
             z-index: 99;
             cursor: pointer;
 
             @media (max-width: 850px) {
                 font-size: 24px;
-                top: auto;
-                bottom: 30px;
             }
         }
 
@@ -514,7 +512,7 @@ body {
 
         &__img {
             position: relative;
-            padding-bottom: 4%;
+            padding-bottom: 30px;
             width: 50%;
 
             @media (max-width: 850px) {
@@ -553,7 +551,7 @@ body {
         }
 
         &__info {
-            padding-bottom: 4%;
+            padding-bottom: 30px;
             width: 50%;
 
             @media (max-width: 850px) {
@@ -695,7 +693,7 @@ body {
         margin-bottom: 80px;
         color: #15243f;
 
-        @media (max-width: 750px) {
+        @media (max-width: 900px) {
             margin-bottom: 0;       
         }
     }
@@ -772,9 +770,17 @@ body {
     }
 
     &-item {
+        min-height: 500px;
         padding: 45px 30px;
         width: 33%;
         text-align: center;
+        display: flex !important;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media (max-width: 900px) {
+            min-height: auto;
+        }
 
         &__text {
             margin-bottom: 45px;
@@ -784,7 +790,7 @@ body {
         }
 
         &__avatar {
-            margin: 0 auto 10px;
+            margin: auto auto 10px;
             height: 100px;
             width: 100px;
             display: flex;
