@@ -35,7 +35,7 @@ $(document).ready(function(){
 	// slick slider for feedback
 	$('.js-sliderFeedback').slick({
 		dots: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		prevArrow: '<div id="prev" class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>',
 		nextArrow: '<div id="next" class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
 		responsive: [
