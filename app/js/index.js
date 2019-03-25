@@ -27,8 +27,10 @@ $(document).ready(function(){
 
 	// slick slider for review
 	$('.js-sliderExperts').slick({
-		autoplay: true,
-  	autoplaySpeed: 2000,
+		// autoplay: true,
+		// autoplaySpeed: 2500,
+		adaptiveHeight: true,
+		pauseOnHover: false,
 		dots: false,
 		prevArrow: '<div id="prev" class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>',
 		nextArrow: '<div id="next" class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>'

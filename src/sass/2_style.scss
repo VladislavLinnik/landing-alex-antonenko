@@ -369,9 +369,11 @@ body {
     }
 
     .what-item {
+        padding-left: 10%;
         flex: 1;
 
         @media (max-width: 860px) {
+            padding-left: 0;
             display: flex;
             flex-direction: column;
             margin-bottom: 90px;
@@ -471,12 +473,16 @@ body {
     &-list {
         color: #fff;
 
+        .slick-track {
+            
+        }
+
         .btn-next,
         .btn-prev {
             position: absolute;
             bottom: 30px;
             color: #c2d1d9;
-            z-index: 99;
+            z-index: 999;
             cursor: pointer;
 
             @media (max-width: 850px) {
@@ -486,15 +492,47 @@ body {
 
         .btn-next {
             right: 0;
+
+            @media (max-width: 850px) {
+
+            }
         }
 
         .btn-prev {
             right: 50px;
+
+            @media (max-width: 850px) {
+
+            }
         }
     }
 
     &-item {
+        margin-top: -50px;
+        padding-top: 50px;
         display: flex !important;
+
+        &--big-img {
+            
+            .experts-item__img {
+
+                @media (max-width: 850px) {
+                    height: 350px;
+                }
+
+                .img-wrap {
+
+                    img {
+
+                    }
+                }
+            }
+
+            .img-alexey {
+
+
+            }
+        }
 
         @media (max-width: 850px) {
             flex-direction: column;
@@ -502,23 +540,21 @@ body {
 
         &__img {
             position: relative;
-            padding-bottom: 30px;
+            padding-bottom: 600px;
             width: 50%;
 
             @media (max-width: 850px) {
                 margin-bottom: 15px;
-                height: 250px;
+                padding-bottom: 250px;
                 width: 100%;
             }
 
             @media (max-width: 600px) {
-                padding-bottom: 0;
+                
             }
 
             .img-wrap {
                 position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
 
                 @media (max-width: 850px) {
                     height: 100%;
@@ -534,11 +570,9 @@ body {
                     @media (max-width: 1000px) {
                         max-width: 300px;
                     }
-                    @media (max-width: 850px) {
-                        max-width: 60%;
-                    }
+
                     @media (max-width: 600px) {
-                        max-width: 100%;
+                        max-width: auto;
                     }
                 }
             }
@@ -898,10 +932,11 @@ body {
     }
 
     &-link {
-        min-width: 300px;
-        max-width: 500px;
         margin-bottom: 20px;
         padding: 12px;
+        min-width: 300px;
+        max-width: 500px;
+        display: inline-block;
         background-color: #1d4ca6;
         text-align: center;
         color: #fff;
