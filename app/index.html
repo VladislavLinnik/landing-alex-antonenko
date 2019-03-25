@@ -27,6 +27,9 @@
 	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
 	<script src="js/jquery.3.3.1.min.js"></script>
 
+	<!-- JQUERY VALIDATE -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+
 	<!-- FOR SUPPORT HTML5 IN IE -->
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -83,13 +86,16 @@
 				</ul>
 			</div>
 			<div class="banner-form">
-				<form class="form">
-					<h6 class="form-cost">Цена</h6>
-					<h4 class="form-oldcost"><span class="number">20000</span> руб</h4>
-					<h4 class="form-newcost">14990 руб</h4>
-					<input type="text" placeholder="Имя">
-					<input type="number" placeholder="Номер телефона">
-					<input type="email" placeholder="Почта">
+				<form class="form js-form" action="https://formfor.site/send/JgHQbDeu3yi8RjA1k2YwYLRjpePszl" method="POST">
+					<div class="form-group">
+						<input type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="form-group">
+						<input type="number" name="phone" placeholder="Номер телефона">
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" placeholder="Почта">
+					</div>
 					<input type="submit" value="Оставить заявку">
 				</form>
 			</div>
@@ -233,8 +239,76 @@
 								<ul class="info-list">
 									<li class="info-item">Основатель интернет сервиса по привлечению клиентов</li>
 									<li class="info-item">Основатель фриланс биржы по удаленной работе</li>
-									<li class="info-item">Соорганизатор деревни предпринимателей</li>
+									<li class="info-item">«Погрузись в деревню предпринимателей и измени мышление за 3 дня!»</li>
 									<li class="info-item">Ведущий спикер на тему интернет-маркетинга</li>
+								</ul>
+							</p>
+							<ul class="info-social__list">
+								<li class="info-social__item">
+									<a href="https://instagram.com/alexndr_boom" class="info-social__link">
+										<img src="./img/social/inst.svg" alt="">
+									</a>
+								</li>
+								<li class="info-social__item">
+									<a href="https://vk.com/sashaoo" class="info-social__link">
+										<img src="./img/social/vk.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="experts-item">
+						<div class="experts-item__img">
+							<div class="img-wrap">
+								<img src="./img/slider/slide_3.jpg">
+							</div>
+						</div>
+						<div class="experts-item__info">
+							<h5 class="info-name">Александр Калинчук</h5>
+							<h6 class="info-role"></h6>
+							<p class="info-text">
+								<i class="info-text-quote fa fa-quote-left" aria-hidden="true"></i>
+								<ul class="info-list">
+									<li class="info-item">Сертифицированный коуч компании Isaac Pintosevich</li>
+									<li class="info-item">Автор программы по личной эффективности</li>
+									<li class="info-item">Тренер курса по целеполаганию для подростков</li>
+									<li class="info-item">Тренер по продажам</li>
+									<li class="info-item">Создатель марафона по продуктивности</li>
+								</ul>
+							</p>
+							<ul class="info-social__list">
+								<li class="info-social__item">
+									<a href="https://instagram.com/alexndr_boom" class="info-social__link">
+										<img src="./img/social/inst.svg" alt="">
+									</a>
+								</li>
+								<li class="info-social__item">
+									<a href="https://vk.com/sashaoo" class="info-social__link">
+										<img src="./img/social/vk.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="experts-item">
+						<div class="experts-item__img">
+							<div class="img-wrap">
+								<img src="./img/slider/slide_4.JPG">
+							</div>
+						</div>
+						<div class="experts-item__info">
+							<h5 class="info-name">Андрей Антонов</h5>
+							<h6 class="info-role">Тренер, коуч, ментор, основатель и владелец центра саморазвития "Архитектура успеха"</h6>
+							<p class="info-text">
+								<i class="info-text-quote fa fa-quote-left" aria-hidden="true"></i>
+								<ul class="info-list">
+									<li class="info-item">Эксперт по освобождению от финансовых барьеров и быстрому достижению целей в бизнесе</li>
+									<li class="info-item">Создатель онлайн-системы для быстрого достижения целей и финансовой свободы</li>
+									<li class="info-item">Эксперт первого канала, НТВ, РЕН ТВ, ТВЦ МИР</li>
+									<li class="info-item">Ученик Джона Кежо (автора бестселлера "Подсознание может все")</li>
+									<li class="info-item">Основатель группы компаний по дизайну эксклюзивных интерьеров "АВКУБЕ"</li>
+									<li class="info-item">Создательно уникальной технологии "КУБЕ", по изменению сценариев жизни в бизнесе, финансах, отношениях - KUBE.RU</li>
+									<li class="info-item">Автор тренингом по моделированию будущего с помощью изменения мышления на уровне подсознания</li>
 								</ul>
 							</p>
 							<ul class="info-social__list">
@@ -339,6 +413,9 @@
 	<section class="go section" id="contact">
 		<div class="container">
 			<h2 class="section-text">Готовы к полной трансформации? <br> Тогда погнали!</h2>
+			<h6 class="go-cost">Цена</h6>
+			<h4 class="go-oldcost"><span class="number">20000</span> руб</h4>
+			<h4 class="go-newcost">14990 руб</h4>
 			<button class="go-link" type="button">Принять участие</button>
 			<a href="https://vk.com/mindmillions" class="go-vk"></a>
 		</div>
@@ -353,7 +430,7 @@
 				<img class="footer-logo__img" src="./img/logo@2x.png" alt="">
 			</a>
 			<p class="description">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet.
+				&copy; 2019 Все права защищены
 			</p>
 		</div>
 	</footer>

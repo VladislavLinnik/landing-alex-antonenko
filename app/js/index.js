@@ -27,6 +27,8 @@ $(document).ready(function(){
 
 	// slick slider for review
 	$('.js-sliderExperts').slick({
+		autoplay: true,
+  	autoplaySpeed: 2000,
 		dots: false,
 		prevArrow: '<div id="prev" class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>',
 		nextArrow: '<div id="next" class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>'
@@ -62,6 +64,29 @@ $(document).ready(function(){
         else {
 	        $( '#menu' ).hide('slideToggle');
         }
-    });
+	});
+	
+	// validate form
+	$(".js-form").validate({
+		rules: {
+		  name: "required",
+		  email: {
+			required: true,
+			email: true
+		  },
+		  phone: {
+			required: true,
+			number: true
+		  }
+		},
+		messages: {
+		  name: "Это поле обязательно",
+		  email: {
+			required: "Это поле обязательно",
+			email: "Введите корректный e-mail (name@domain.com)"
+		  },
+		  phone: "Это поле обязательно",
+		}
+	  });
 
 });
